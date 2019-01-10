@@ -689,6 +689,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="jquery.countdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.14/dist/index.min.js"></script>
 </head>
 
 <body>
@@ -700,7 +701,7 @@
                     <div class="pure-u-1-2">
                         <div class="main-example">
                             <p>
-                                Jafari baby countdown
+                                Jafari baby countdown! 🎉 🎉 🎉
                             </p>
                             <div class="countdown-container" id="main-example"></div>
                         </div>
@@ -797,6 +798,12 @@
         </script>
 
     </main>
+    <canvas id="my-canvas"></canvas>
+    <script>
+    var confettiSettings = { target: 'my-canvas' };
+var confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
+    </script>
 </body>
 
 </html>
